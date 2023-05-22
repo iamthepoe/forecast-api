@@ -2,7 +2,7 @@ const URL = 'http://localhost:3000';
 import assert from 'assert/strict';
 import { describe, it } from "node:test";
 
-describe("Beach forecast functional tests", async ()=>{
+describe("Beach forecast functional tests", ()=>{
   it("should return status code 200", async ()=>{
     const {body, status} = await fetch(`${URL}/forecast`);
     assert.strictEqual(body, [{
