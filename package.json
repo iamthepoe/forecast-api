@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix"
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --loader tsx --test test/**/*Test.ts",
   },
   "keywords": [],
   "author": "iamthepoe",
