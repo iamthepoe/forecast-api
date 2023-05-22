@@ -1,16 +1,17 @@
 {
   "name": "dev-lab",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src ./test --ext .ts",
-    "lint:fix": "eslint ./src ./test --ext .ts --fix"
-    "test": "node --loader tsx --test test/**/*Test.ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test": "node --loader tsx --test test/**/*Test.ts"
   },
   "keywords": [],
   "author": "iamthepoe",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "@types/node": "^20.2.3",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
