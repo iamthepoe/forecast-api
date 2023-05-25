@@ -6,6 +6,10 @@ export class SetupServer extends Server{
     super();
   }
 
+  public init(): void {
+    this.setupExpress();
+  }
+
   private setupExpress(): void {
     this.app.use(express.json());
   }
