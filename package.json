@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
-    "test": "node --loader tsx --test test/**/*Test.ts"
+    "test": "node --loader tsx --test test/**/*Test.ts",
+    "style:check": "prettier --check 'src/**/*.ts' 'test/**/*.ts'", 
+    "style:fix": "prettier --write 'src/**/*.ts' 'test/**/*.ts'"
   },
   "keywords": [],
   "author": "iamthepoe",
@@ -19,6 +21,7 @@
     "@typescript-eslint/eslint-plugin": "^5.59.7",
     "@typescript-eslint/parser": "^5.59.7",
     "eslint": "^8.41.0",
+    "prettier": "^2.8.8",
     "tsup": "^6.7.0",
     "tsx": "^3.12.7",
     "typescript": "^5.0.4"
