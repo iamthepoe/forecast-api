@@ -7,7 +7,7 @@ describe('StormGlass Client', () => {
     const lat = -33.792726;
     const lng = 151.721726;
 
-    const stormGlass = new StormGlass();
+    const stormGlass = new StormGlass(fetch);
     const response = await stormGlass.fetchPoints(lat, lng);
     assert.deepStrictEqual(response, {});
   });
