@@ -13,6 +13,10 @@ export interface StormGlassPoint{
   readonly windSpeed: StormGlassPointSource;
 }
 
+export interface StormGlassForecastResource{
+  hours: Array<StormGlassPoint>;
+}
+
 export class StormGlass {
   readonly stormGlassAPIParams =
     'swellDirection,swellHeight,swellPeriod,waveDirection,waveHeight,windDirection,windSpeed';
