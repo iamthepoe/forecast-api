@@ -13,7 +13,7 @@ export interface StormGlassPoint{
   readonly windSpeed: StormGlassPointSource;
 }
 
-export interface StormGlassForecastResource{
+export interface StormGlassForecastResponse{
   hours: Array<StormGlassPoint>;
 }
 
