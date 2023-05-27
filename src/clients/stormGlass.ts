@@ -1,3 +1,7 @@
+export interface StormGlassPointSource{
+  [key: string]: number;
+}
+
 export class StormGlass {
   readonly stormGlassAPIParams =
     'swellDirection,swellHeight,swellPeriod,waveDirection,waveHeight,windDirection,windSpeed';
