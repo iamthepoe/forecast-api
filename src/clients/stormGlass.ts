@@ -6,8 +6,12 @@ export class StormGlass {
   constructor(protected request: typeof fetch){}
 
   public async fetchPoints(lat: number, lng: number): Promise<{}> {
-    return this.request(`https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${this.stormGlassAPIParams}&source=${this.stormGlassAPISource}`, {
+    let response = await this.request(`https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${this.stormGlassAPIParams}&source=${this.stormGlassAPISource}`, {
       method: 'GET'
     });
+   
+    response = await response.json();
+
+    return (response as any).data;
   }
 }
